@@ -10,9 +10,9 @@
     "e2e": "ng e2e",
 
     "build": "ng build --prod --output-hashing=none",
-    "package": "cp dist/www/{*.js,*.html,*.css,*.ico} .",
+    "package": "npm run build;cp dist/www/{*.js,*.html,*.css,*.ico} .",
     "serve": "http-server --gzip -o",
-    "show": "npm run build;npm run package;npm run serve"
+    "show": "npm run package;npm run serve"
   },
   "private": true,
   "dependencies": {
